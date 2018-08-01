@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>Are you want to Delete this {{schooldata.title}} ?
+<form method="POST" action="">
+	{% csrf_token%}
+	<input type="submit" value="Delete">
+	<a href="{% url 'cbsviews:details' pk=schooldata.pk %}">Cancel</a>
+</form>
+
+</body>
+</html>

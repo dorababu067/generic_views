@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1><u>Schools Details</u></h1>
+<p>
+<strong>School Name:</strong>{{school.title}}<br/>
+<strong>School Pricipal:</strong>{{school.pricipal}}<br/>
+<strong>School Location:</strong>{{school.location}}<br/>
+<a href="{% url 'cbsviews:update' pk=school.id %}"><input type="button" value="Update"></a>
+</p>
+
+</body>
+</html>
